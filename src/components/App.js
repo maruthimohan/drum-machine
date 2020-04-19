@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import DrumMachine from './DrumMachine';
 
 const drumSoundData = [{
     keyCode: 81,
@@ -53,6 +54,7 @@ function App() {
   return (
     <div className="App">
         <div className="app-header">DRUM MACHINE</div>
+        <DrumMachine drumSoundData={drumSoundData}/>
     </div>
   );
 }

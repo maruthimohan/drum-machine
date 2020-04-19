@@ -1,0 +1,29 @@
+// Component level variables
+$drumpad-normal: rgb(125, 39, 38);
+$drumpad-active: rgb(28, 52, 107);
+$drumpad-text: rgb(136, 132, 132);
+$app-background-color: rgb(119, 136, 153);
+
+.drum-pad {
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    width: 120px;
+    background-color: $drumpad-normal;
+    color: $app-background-color;
+    font-size: 22px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    position: relative;
+
+    &:active {
+        box-shadow: none;
+        left: 3px;
+        top: 3px;
+        color: rgb(218, 211, 211);
+        background-color: $drumpad-active;
+    }
+}

@@ -1,0 +1,44 @@
+// Component level CSS variables
+$drumpad-machine-fonts: 'Orbitron', sans-serif;
+
+.drum-machine {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    font-family: $drumpad-machine-fonts;
+
+    .display {
+        position: relative;
+        width: 380px;
+        height: 80px;
+        background: rgb(141, 151, 161);
+        border-radius: 5px;
+        margin: auto;
+        margin-bottom: 10px;
+
+        .now-playing {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(226, 228, 230)
+        }
+
+        .current-sound {
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+            width: 100%;
+            font-size: 22px;
+            font-weight: 500;
+            color: #5d1b1a;
+        }
+    }
+
+    .drum-pad-group {
+        text-align: center;
+    }
+}

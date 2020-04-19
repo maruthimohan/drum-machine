@@ -1,8 +1,23 @@
+// Component level variables
+$app-background: rgb(119, 136, 153);
+$app-header-color: rgb(249, 187, 71);
+$app-header-font: 'Orbitron', sans-serif;
+
 .App {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(119, 136, 153);
   
     .app-header {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 30px;
+        text-align: right;
+        padding: 10px;
+        font-family: $app-header-font;
+        color: rgb(28, 52, 107);
+        letter-spacing: 3px;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
 }
 
